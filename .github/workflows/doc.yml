@@ -2,13 +2,13 @@ name: doc
 on:
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - 'docs/**'
       - '.github/workflows/doc.yml'
   push:
     branches:
-      - master
+      - main
     paths:
       - 'docs/**'
       - '.github/workflows/doc.yml'
@@ -34,7 +34,7 @@ jobs:
       - name: Install Python requirements
         run: |
           pip install -r requirements.txt
-          
+
       - name: Build documentation
         run: mkdocs build
 
