@@ -35,10 +35,7 @@ theme:
 
 # Page tree
 nav:
-  - Intro:
-    - Introduzione: intro/introduzione.md
-    - Passaggio da Veriti 2 a Veriti 3: intro/passaggio-da-veriti-2-a-veriti-3.md
-    - Installazione: intro/installazione.md
+  - Introduzione: index.md
   - Manuale dell'utente:
     - Toolbar: manuale-dell-utente/toolbar.md
     - Struttura dei dati: manuale-dell-utente/struttura-dei-dati.md

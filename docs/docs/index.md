@@ -4,7 +4,7 @@ modificarli e permette di verificare che i vincoli di integrità tra i
 dati siano conformi alle direttive cantonali (documento Descrizione del
 geodato e della sua trasmissione al Cantone).
 
-## Releases
+### Releases
 
 | Versione | Data | Modifiche |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ geodato e della sua trasmissione al Cantone).
 | 3.4.8 | 26.11.2021 | Ignora Kantonalen Typen topics in VeriGR export |
 | 3.4.9 | 26.11.2021 | Imposta widgets e valori di default in VeriGR |
 
-## Requisiti tecnici
+### Requisiti tecnici
 
 - QGIS 3 (3.4 o superiore)
 - Java JDK `1.8.0`
@@ -40,9 +40,71 @@ geodato e della sua trasmissione al Cantone).
     incompatibilità con QGIS (novembre 2019)) con estensione PostGIS
     (3.1)
 
-## Definizione dei termini
+### Definizione dei termini
 
 - Veriti
 - Progetto QGIS
 - Modello INTERLIS
 - File data transfer INTERLIS
+
+## Installazione
+
+### QGIS
+
+Scaricare e installare QGIS secondo le indicazioni di
+<http://www.qgis.org>.
+
+### PostgreSQL
+
+Scaricare e installare PostgreSQL secondo le indicazioni di
+<https://www.postgresql.org/>.
+
+### PostGIS 3.1
+
+Per installare PostGIS è sufficiente digitare all\'interno di una query
+shell, ad esempio in `pgAdmin`, il seguente comando:
+
+``` {.bash org-language="sh"}
+CREATE EXTENSION postgis;
+```
+
+### Veriti
+
+Lanciare QGIS e aprire il gestore di plugin di QGIS, tramite il menu
+`Plugins
+   → Gestisci e installa plugin…`
+
+Scegliere `Impostazioni`, `Aggiungi…` e inserire i
+dati del repository contenente il plugin VeriTi: • Nome: Veriti
+Repository (o qualsiasi altro nome) • URL:
+<https://download.opengis.ch/repos/veriti/plugins.xml>
+
+Premendo su OK, verranno richieste le credenziali del repository. A
+questo punto scegliere `Tutto` nella barra a sinistra e
+installare il Veriti. Chiudere e riaprire QGIS per applicare tutte le
+modifiche effettuate.
+
+## Passaggio da Veriti 2 a Veriti 3
+
+Il passaggio da Veriti 2 a Veriti 3 comporta molte novità e
+miglioramenti:
+
+- è possibile generare un progetto QGIS partendo dai dati importati
+    nella banca dati, una sola volta tramite gli strumenti di Veriti
+    (quello che nella versione precedente si faceva con \"base -\>
+    base\" e in seguito salvare e caricare unicamente il progetto QGIS.
+- la simbologia cantonale dei piani regolatori è ora integrata
+    direttamente nel plugin e viene installata automaticamente in QGIS.
+- molte modifiche sotto il cofano, che permettono di avere
+    impostazioni e installazione semplificata e risolvere i problemi di
+    incompatibilità che esistevano con la versione precedente e
+    facilitano lo sviluppo di nuove funzionalità.
+- è necessaria la creazione di un solo utente della banca dati.
+- strumenti specifici di Veriti come la maschera per l\'associazione
+    dei piani grafici, completamente riscritte e più comode da
+    utilizzare.
+- documentazione online sempre aggiornata all\'ultima versione.
+
+Sebbene Veriti 3 sia in grado di mostrare anche i progetti caricati
+nella banca dati con Veriti 2, è consigliabile lavorare in Veriti 3
+solamente con progetti importati con Veriti 3.
