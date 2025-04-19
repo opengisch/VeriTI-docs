@@ -1,0 +1,52 @@
+# Project information
+site_name: VeriTI
+site_url: https://opengisch.github.io/VeriTI-docs/
+docs_dir: docs
+
+# Repository
+repo_name: opengisch/VeriTI
+repo_url: https://github.com/opengisch/VeriTI
+edit_uri: https://github.com/opengisch/VeriTI-docs/tree/master/docs/
+
+# Theme configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+  logo: assets/veriti-icon.png
+  favicon: assets/veriti-icon.png
+  icon:
+    logo: assets/veriti-icon.png
+  palette:
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: white
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+        primary: white
+
+# Page tree
+nav:
+  - Intro:
+    - Introduzione: intro/introduzione.md
+    - Passaggio da Veriti 2 a Veriti 3: intro/passaggio-da-veriti-2-a-veriti-3.md
+    - Installazione: intro/installazione.md
+  - Manuale dell'utente:
+    - Toolbar: manuale-dell-utente/toolbar.md
+    - Struttura dei dati: manuale-dell-utente/struttura-dei-dati.md
+    - Vincoli di integrità tra dati: manuale-dell-utente/vincoli-di-integrita-tra-dati.md
+    - Backup della banca dati: manuale-dell-utente/backup-della-banca-dati.md
+    - Domande frequenti: manuale-dell-utente/domande-frequenti.md
+
+markdown_extensions:
+  - attr_list
+  - def_list
+  - admonition
