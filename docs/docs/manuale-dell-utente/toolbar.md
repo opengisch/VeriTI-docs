@@ -135,7 +135,7 @@ piani grafici presenti. È possibile anche rimuovere le associazioni,
 semplicemente cancellando il simbolo in questione. Per la scelta del
 simbolo, è possibile inserire direttamente il codice del simbolo nella
 tabella oppure selezionarlo tramite il dialogo di selezione dei simboli
-di QGIS. Nel dialogo vanno unicamente selezionati i simboli dall\'elenco
+di QGIS. Nel dialogo vanno unicamente selezionati i simboli dall'elenco
 mostrato. Nella banca dati viene registrato il codice del simbolo. Ogni
 modifica al simbolo fatta in questo dialogo, non viene registrata.
 
@@ -163,7 +163,7 @@ Questo pulsante serve per riscrivere nella banca dati (in particolare
 nelle tabelle che associano le geometrie con i piani grafici) tutte le
 relazioni.
 
-Quando viene copiata una geometria, quest\'ultima, non avrà un record
+Quando viene copiata una geometria, quest'ultima, non avrà un record
 nella tabella che associa le geometrie con i piani grafici. Premendo
 questo pulsante, vengono create le associazioni per tutte le geometrie e
 quindi anche quella copiata verrà associata come le altre con la stessa
@@ -179,7 +179,7 @@ zone*
 Questo pulsante apre la tabella per la configurazione degli attributi
 delle zone comunali. Per ogni zona, viene visualizzata una colonna per
 ogni attributo definito dalla zona cantonale e viene indicato se
-l\'attributo è obbligatorio o meno tramite il simbolo di attenzione
+l'attributo è obbligatorio o meno tramite il simbolo di attenzione
 nella cella della tabella.
 
 ![Finestra di configurazione degli attributi delle zone

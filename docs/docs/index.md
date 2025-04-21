@@ -11,13 +11,13 @@ geodato e della sua trasmissione al Cantone).
 | 3.0.0 | 07.11.2019 | Prima versione per QGIS 3 |
 | 3.0.1 | 11.11.2019 | Corregge creazione svg path su Windows |
 | 3.0.2 | 11.11.2019 | Corregge errore encoding su Windows |
-| 3.1.0 | 13.11.2019 | Validazione form nell\'import dialog, aggiunta di campi \"joinati\" con simbolo e piano grafico nelle geometrie, implementazione della funzione importa shapefile |
+| 3.1.0 | 13.11.2019 | Validazione form nell'import dialog, aggiunta di campi \"joinati\" con simbolo e piano grafico nelle geometrie, implementazione della funzione importa shapefile |
 | 3.1.1 | 19.11.2019 | Mostra messaggi di errore comprensibili se non trova Java o non è la versione corretta |
 | 3.2.0 | 20.11.2019 | Implementa la maschera per gestire gli attributi delle definizioni di zona e elemento |
 | 3.2.1 | 22.11.2019 | Modifica il Vincolo 24. Adesso è: Una definizione in vigore deve avere almeno una geometria in vigore *o nuova* |
 | 3.3.0 | 27.11.2019 | Corregge un problema che impediva di copiare geometrie e aggiunge il pulsante per ricreare tutte le relazioni con i piani grafici |
 | 3.3.1 | 28.11.2019 | Corregge errore encoding su Windows durante export e chiede di esportare solamente come `.itf` |
-| 3.3.2 | 24.01.2020 | Corregge l\'errore quando si seleziona un simbolo se nessuna geometria di una determinata definizione di elemento comunale è assegnata a un piano grafico |
+| 3.3.2 | 24.01.2020 | Corregge l'errore quando si seleziona un simbolo se nessuna geometria di una determinata definizione di elemento comunale è assegnata a un piano grafico |
 | 3.3.3 | 20.02.2020 | Corregge errore in attributi elemento |
 | 3.3.4 | 20.02.2020 | Imposta titolo del progetto |
 | 3.3.5 | 24.03.2020 | Corregge problema con valori vuoti nella tabella gestione attributi e altre piccole correzioni |
@@ -61,7 +61,7 @@ Scaricare e installare PostgreSQL secondo le indicazioni di
 
 ### PostGIS 3.1
 
-Per installare PostGIS è sufficiente digitare all\'interno di una query
+Per installare PostGIS è sufficiente digitare all'interno di una query
 shell, ad esempio in `pgAdmin`, il seguente comando:
 
 ``` {.bash org-language="sh"}
@@ -100,10 +100,10 @@ miglioramenti:
     incompatibilità che esistevano con la versione precedente e
     facilitano lo sviluppo di nuove funzionalità.
 - è necessaria la creazione di un solo utente della banca dati.
-- strumenti specifici di Veriti come la maschera per l\'associazione
+- strumenti specifici di Veriti come la maschera per l'associazione
     dei piani grafici, completamente riscritte e più comode da
     utilizzare.
-- documentazione online sempre aggiornata all\'ultima versione.
+- documentazione online sempre aggiornata all'ultima versione.
 
 Sebbene Veriti 3 sia in grado di mostrare anche i progetti caricati
 nella banca dati con Veriti 2, è consigliabile lavorare in Veriti 3
