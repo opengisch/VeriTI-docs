@@ -75,9 +75,10 @@ Lanciare QGIS e aprire il gestore di plugin di QGIS, tramite il menu
    → Gestisci e installa plugin…`
 
 Scegliere `Impostazioni`, `Aggiungi…` e inserire i
-dati del repository contenente il plugin VeriTi: • Nome: Veriti
-Repository (o qualsiasi altro nome) • URL:
-<https://download.opengis.ch/repos/veriti/plugins.xml>
+dati del repository contenente il plugin VeriTi:
+
+- Nome: Veriti Repository (o qualsiasi altro nome)
+- URL: <https://download.opengis.ch/repos/veriti/plugins.xml>
 
 Premendo su OK, verranno richieste le credenziali del repository. A
 questo punto scegliere `Tutto` nella barra a sinistra e
