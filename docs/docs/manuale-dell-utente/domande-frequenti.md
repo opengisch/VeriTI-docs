@@ -8,16 +8,16 @@ accessibili a Veriti, per questo motivo, non è possibile eseguirli.
 ## Se aggiorno QGIS, devo riscaricare il plugin Veriti?
 
 No, i plugin e le impostazioni rimangono a meno che si tratti
-dell\'installazione di una versione maggiore (es. passaggio da QGIS 2 a
+dell'installazione di una versione maggiore (es. passaggio da QGIS 2 a
 QGIS 3).
 
 ## Se aggiorno il plugin VeriTi, devo riconfigurare tutto?
 
 No, aggiornando il plugin, tutte le impostazioni restano come prima.
 
-## Dove posso chiedere informazioni sull\'utilizzo di QGIS?
+## Dove posso chiedere informazioni sull'utilizzo di QGIS?
 
-Il posti migliori dove chiedere informazioni sull\'utilizzo di QGIS
+Il posti migliori dove chiedere informazioni sull'utilizzo di QGIS
 sono:
 
 In italiano:
