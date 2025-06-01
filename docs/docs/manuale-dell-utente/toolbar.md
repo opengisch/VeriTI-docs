@@ -12,6 +12,7 @@ I pulsanti sono, da sinistra a destra:
 - Elimina progetto dal db
 - Crea progetto da database
 - Verifica vincoli
+- Verifica INTERLIS
 - Menu con i seguenti pulsanti
   - Configura associazioni zone (scelta di default)
   - Configura associazioni elementi
@@ -115,6 +116,23 @@ selezionati gli elementi nei layer in questione o verrà creato un layer
 temporaneo con gli errori (ad esempio nel caso dei buchi tra geometrie).
 
 ![Verifica dei vincoli](../assets/checks.gif)
+
+## Verifica INTERLIS
+
+![image](../assets/ilicheck.png)
+
+*Pulsante per apertura dialogo verifica INTERLIS*
+
+Questo pulsante apre la finestra di dialogo per la validazione INTERLIS.
+Dal dialogo è possibile avviare una validazione INTERLIS per verificare
+che i dati del progetto siano conformi al modello, allo stesso modo in 
+cui viene fatta dal portale cantonale.
+Eventuali errori vengono mostrati in una lista. In caso di errori relativi
+un oggetto geometrico è possibile evidenziarlo o zoommare alle relative
+coordinate tramite menu tasto destro oppure tramite i bottoni in basso.
+La validazione puo essere eseguita in qualsiasi momento.
+
+![Verifica INTERLIS](../assets/ilicheck_dialog.png)
 
 ## Menu funzioni speciali di associazione
 
