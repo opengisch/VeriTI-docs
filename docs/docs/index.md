@@ -31,14 +31,13 @@ geodato e della sua trasmissione al Cantone).
 | 3.4.7 | 06.11.2021 | Installazione automatica di ili2pg migliorata |
 | 3.4.8 | 26.11.2021 | Ignora Kantonalen Typen topics in VeriGR export |
 | 3.4.9 | 26.11.2021 | Imposta widgets e valori di default in VeriGR |
+| 4.1.6 | 02.06.2025 | Aggiornamento delle dipendenze a ili2db 5.3.1 e aggiunta di una finestra di validazione INTERLIS |
 
 ### Requisiti tecnici
 
 - QGIS 3 (3.4 o superiore)
-- Java JDK `1.8.0`
-- PostgreSQL 9.4 o superiore (massimo versione 11 per attuale
-    incompatibilità con QGIS (novembre 2019)) con estensione PostGIS
-    (3.1)
+- Java JDK `1.8.0` o superiore
+- PostgreSQL 9.4 o superiore PostGIS 3.1 o superiore
 
 ### Definizione dei termini
 
@@ -59,7 +58,7 @@ Scaricare e installare QGIS secondo le indicazioni di
 Scaricare e installare PostgreSQL secondo le indicazioni di
 <https://www.postgresql.org/>.
 
-### PostGIS 3.1
+### PostGIS
 
 Per installare PostGIS è sufficiente digitare all'interno di una query
 shell, ad esempio in `pgAdmin`, il seguente comando:
@@ -84,6 +83,24 @@ Premendo su OK, verranno richieste le credenziali del repository. A
 questo punto scegliere `Tutto` nella barra a sinistra e
 installare il Veriti. Chiudere e riaprire QGIS per applicare tutte le
 modifiche effettuate.
+
+## Passaggio da Veriti 3 a Veriti 4
+
+Il passaggio da Veriti 3 a Veriti 4 comporta un aggiornamento importante
+della libreria INTERLIS utilizzata `ili2db` dalla versione 3.x alla 5.x 
+con delle ripercussioni sulla compatibilità dei progetti salvati in banca
+dati.
+I progetti creati con VeriTi versione <4.0.0 devono essere migrati. All'
+apertura di un vecchio progetto un dialogo del plugin offre la possibilità
+di migrare automaticamente il progetto. Lo schema originale viene rinominato
+con l'aggiunta di un suffisso `_backup_3x`e funge da backup.
+
+In alternativa la migrazione può essere effettuata a mano con i seguenti
+passaggi:
+
+- Esportazione del progetto in formato .itf (oppure .xtf per VeriGR)
+- Eliminazione dello schema dalla banca dati (soltanto se si vuole mantenere lo stesso nome)
+- Re-importazione del progetto dal file .itf tramite l'utensile 'Importa INTERLIS'
 
 ## Passaggio da Veriti 2 a Veriti 3
 
