@@ -32,6 +32,9 @@ geodato e della sua trasmissione al Cantone).
 | 3.4.8 | 26.11.2021 | Ignora Kantonalen Typen topics in VeriGR export |
 | 3.4.9 | 26.11.2021 | Imposta widgets e valori di default in VeriGR |
 | 4.1.6 | 02.06.2025 | Aggiornamento delle dipendenze a ili2db 5.3.1 e aggiunta di una finestra di validazione INTERLIS |
+| 4.1.7 | 03.07.2025 | Migrazione automatica dei progetti 3.x |
+| 4.2.1 | 24.09.2025 | Piccole correzioni relative shape file import e dialogo impostazioni |
+| 4.3.0 | 10.03.2026 | Plugin pronto per QGIS 4, correzioni simbologia VeriGR |
 
 ### Requisiti tecnici
 
