@@ -100,7 +100,7 @@ Le estensioni appariranno nella lista:
 
 ![image](./assets/pgadmin_result.png)
 
-**Nota:** Se `postgis`non si trova significa che l'estensione non è stata 
+**Nota:** Se `postgis`non si trova, significa che l'estensione non è stata 
 installata. Eseguire nuovamente l'installer di PostgreSQL e 
 assicurarsi di installare l'estensione postgis.
 
