@@ -71,6 +71,7 @@ modo da conservare i dati separati da eventuali altre applicazioni che
 utilizzano PostgreSQL.
 
 ### Setup tramite SQL
+
 Per creare il database e installare le estensioni
 necessarie è sufficiente digitare all'interno di una query shell, ad 
 esempio in `pgAdmin`, i seguente comandi:
@@ -82,20 +83,22 @@ CREATE EXTENSION "uuid-ossp";
 
 ### Setup tramite pgAdmin
 
+In alternativa è possibile utilizzare la GUI di psAdmin:
+
 - Clickare con il tasto destro su `Databases` -> `Create` -> `Database...`.
 - Creare un database con nome `veriti`.
 
-![image](../assets/pgadmin_create_database.png)
+![image](./assets/pgadmin_create_database.png)
 
 Il database creato apparirà nella lista.
 - Clickare con il tasto destro su `Extensions`-> `Create`-> `Extension...`
 - Cercare e aggiungere le estensioni `postgis` e `uuid-ossp`
 
-![image](../assets/pgadmin_create_extension.png)
+![image](./assets/pgadmin_create_extension.png)
 
 Le estensioni appariranno nella lista:
 
-![image](../assets/pgadmin_result.png)
+![image](./assets/pgadmin_result.png)
 
 Se `postgis`non si trova significa che l'estensione non è stata 
 installata. Eseguire nuovamente l'installer di PostgreSQL e 
