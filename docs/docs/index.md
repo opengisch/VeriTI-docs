@@ -83,7 +83,7 @@ CREATE EXTENSION "uuid-ossp";
 
 ### Setup tramite pgAdmin
 
-In alternativa è possibile utilizzare la GUI di psAdmin:
+In alternativa è possibile utilizzare la GUI di pgAdmin:
 
 - Clickare con il tasto destro su `Databases` -> `Create` -> `Database...`.
 - Creare un database con nome `veriti`.
