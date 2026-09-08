@@ -4,7 +4,7 @@ modificarli e permette di verificare che i vincoli di integrità tra i
 dati siano conformi alle direttive cantonali (documento Descrizione del
 geodato e della sua trasmissione al Cantone).
 
-### Releases
+## Releases
 
 | Versione | Data | Modifiche |
 | --- | --- | --- |
@@ -36,41 +36,72 @@ geodato e della sua trasmissione al Cantone).
 | 4.2.1 | 24.09.2025 | Piccole correzioni relative shape file import e dialogo impostazioni |
 | 4.3.0 | 10.03.2026 | Plugin pronto per QGIS 4, correzioni simbologia VeriGR |
 
-### Requisiti tecnici
+## Requisiti tecnici
 
 - QGIS 3 (3.4 o superiore)
 - Java JDK `1.8.0` o superiore
 - PostgreSQL 9.4 o superiore PostGIS 3.1 o superiore
 
-### Definizione dei termini
+## Definizione dei termini
 
 - Veriti
 - Progetto QGIS
 - Modello INTERLIS
 - File data transfer INTERLIS
 
-## Installazione
+# Installazione
 
-### QGIS
+## QGIS
 
 Scaricare e installare QGIS secondo le indicazioni di
 <http://www.qgis.org>.
 
-### PostgreSQL
+## PostgreSQL
 
 Scaricare e installare PostgreSQL secondo le indicazioni di
 <https://www.postgresql.org/>.
 
-### PostGIS
+Su windows è necessario clickare l'apposita checkbox nell'installer
+"Stack builder" per installare l'estensione spaziale PostGIS
 
-Per installare PostGIS è sufficiente digitare all'interno di una query
-shell, ad esempio in `pgAdmin`, il seguente comando:
+## Setup della banca dati
 
-``` {.bash org-language="sh"}
+Per impostazione di default Veriti utilizza la banca dati `veriti` in 
+modo da conservare i dati separati da eventuali altre applicazioni che
+utilizzano PostgreSQL.
+
+### Setup tramite SQL
+Per creare il database e installare le estensioni
+necessarie è sufficiente digitare all'interno di una query shell, ad 
+esempio in `pgAdmin`, i seguente comandi:
+``` sql
+CREATE DATABASE veriti;
 CREATE EXTENSION postgis;
+CREATE EXTENSION "uuid-ossp";
 ```
 
-### Veriti
+### Setup tramite pgAdmin
+
+- Clickare con il tasto destro su `Databases` -> `Create` -> `Database...`.
+- Creare un database con nome `veriti`.
+
+![image](../assets/pgadmin_create_database.png)
+
+Il database creato apparirà nella lista.
+- Clickare con il tasto destro su `Extensions`-> `Create`-> `Extension...`
+- Cercare e aggiungere le estensioni `postgis` e `uuid-ossp`
+
+![image](../assets/pgadmin_create_extension.png)
+
+Le estensioni appariranno nella lista:
+
+![image](../assets/pgadmin_result.png)
+
+Se `postgis`non si trova significa che l'estensione non è stata 
+installata. Eseguire nuovamente l'installer di PostgreSQL e 
+assicurarsi di installare l'estensione postgis.
+
+## Veriti
 
 Lanciare QGIS e aprire il gestore di plugin di QGIS, tramite il menu
 `Plugins
@@ -84,10 +115,9 @@ dati del repository contenente il plugin VeriTi:
 
 Premendo su OK, verranno richieste le credenziali del repository. A
 questo punto scegliere `Tutto` nella barra a sinistra e
-installare il Veriti. Chiudere e riaprire QGIS per applicare tutte le
-modifiche effettuate.
+installare il Veriti.
 
-## Passaggio da Veriti 3 a Veriti 4
+# Passaggio da Veriti 3 a Veriti 4
 
 Il passaggio da Veriti 3 a Veriti 4 comporta un aggiornamento importante
 della libreria INTERLIS utilizzata `ili2db` dalla versione 3.x alla 5.x 
@@ -105,7 +135,7 @@ passaggi:
 - Eliminazione dello schema dalla banca dati (soltanto se si vuole mantenere lo stesso nome)
 - Re-importazione del progetto dal file .itf tramite l'utensile 'Importa INTERLIS'
 
-## Passaggio da Veriti 2 a Veriti 3
+# Passaggio da Veriti 2 a Veriti 3
 
 Il passaggio da Veriti 2 a Veriti 3 comporta molte novità e
 miglioramenti:
